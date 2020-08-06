@@ -64,20 +64,11 @@ button:hover {
   cursor: pointer;
 }
 
-#output, #outputOriginal {
-  margin: 0;
-  display: inline;
-  border-left: 1px solid var(--accent);
+a {
+  color: var(--accent);
+  text-decoration: none;
 }
 
-#output {
-  float: right;
-  width: 80%;
+a:hover {
+  text-decoration: underline;
 }
-
-#outputOriginal {
-  float: left;
-  width: 20%;
-}
-
-a {color: var(--accent)}
