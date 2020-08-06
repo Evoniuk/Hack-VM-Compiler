@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hack VM Compiler</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h2>Hack VM Compiler</h2>
+
+  <p>This is a compiler from Hack VM code into Hack assembly code.</p>
+
+  <p>Some programs provided by the course are single-file. If you want to compile these files, or a similar hand-written program without <code>Sys.init</code>, copy and paste the code in the text area below.</p>
+
+  <textarea placeholder="enter code here" id="codeInput" spellcheck="false"></textarea>
+  <button type="button" id="inputCode">submit</button>
+
+  <p>Otherwise, for multi-file programs, upload a directory (StaticsTest is the only provided program that requires this):</p>
+
+  <input type="file" id="fileInput" name="myfile" multiple webkitdirectory>
+
+  <p>Note that, due to my laziness, this compiler does not check for mistakes. If there's an error in your code you're on your own.</p>
+
+  <script src="./src/parser.js"></script>
+  <script src="./src/compile.js"></script>
+  <script src="./src/preliminaries.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

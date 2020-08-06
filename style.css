@@ -1,0 +1,83 @@
+* {box-sizing: border-box}
+
+:root {
+  /* --accent: rgb(14, 67, 117); */
+  /* --lightBack: rgb(244, 247, 250); */
+
+  --accent: rgb(41, 150, 123);
+  --lightBack: rgb(241, 252, 250);
+
+  /* --accent: rgb(206, 30, 30); */
+  /* --lightBack: rgb(253, 246, 246); */
+}
+
+body {
+  max-width: 40rem;
+  margin: auto;
+  font-family: arial, helvetica, sans-serif;
+  padding: 0 5px;
+  line-height: 1.6rem;
+}
+
+h2 {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
+}
+
+code, pre, textarea {
+  color: var(--accent);
+  background-color: var(--lightBack);
+  font-size: 1rem;
+  padding: 2px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+pre {padding: 0 5px}
+
+textarea {
+  width: 100%;
+  min-height: 12rem;
+  resize: none;
+  outline: none;
+  font-family: monospace;
+  border: none;
+  border-left: 5px solid var(--accent);
+  padding-left: 10px;
+}
+
+button, input {
+  font-size: 1rem;
+  outline: none;
+  background-color: var(--lightBack);
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: block;
+  margin: 5px auto;
+  color: var(--accent);
+}
+
+button:hover {
+  font-style: italic;
+  background-color: var(--lightBack);
+  cursor: pointer;
+}
+
+#output, #outputOriginal {
+  margin: 0;
+  display: inline;
+  border-left: 1px solid var(--accent);
+}
+
+#output {
+  float: right;
+  width: 80%;
+}
+
+#outputOriginal {
+  float: left;
+  width: 20%;
+}
+
+a {color: var(--accent)}
